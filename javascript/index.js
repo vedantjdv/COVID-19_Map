@@ -65,9 +65,9 @@ axios.request(options).then(function (response) {
           displayMode: 'regions',
           colorAxis: {colors: ['#e5ef88', '#d4b114', '#e85a03','#ff3333', '#e60000', '#980000', '#4d0000']},
           resolution: 'provinces',
-          /*backgroundColor: '#81d4fa',*/
-          /*datalessRegionColor: '#81d4fa',*/
-          defaultColor: '#f5f5f5',
+          backgroundColor: '#000000',
+          datalessRegionColor: '#000000',
+          defaultColor: '#000000',
           width: 640,
           height: 480
         };
