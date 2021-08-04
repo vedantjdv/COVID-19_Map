@@ -9,7 +9,7 @@ var options = {
 };
 
 axios.request(options).then(function (response) {
-  //const corona=JSON.parse(response);
+  
   var confirmedData = response.data.total_values.confirmed;
   var activeData = response.data.total_values.active;
   var recoveredData = response.data.total_values.recovered;
