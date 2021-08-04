@@ -1,1 +1,39 @@
 /* temp */
+*{
+    margin-top: 1vw;
+}
+.data-tab{
+    color: black;
+    width: 50%;
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+h2{
+    font-size: 2vw;
+}
+.img{
+    margin: auto;
+    padding-bottom: 1vw;
+}
+.data-tab-child{
+    border: 0.3vw solid transparent;
+    transition: all 0.5s;
+
+}
+.data-tab-child-1:hover{
+    background-color: rgba(127, 255, 212, 0.678);
+    transform: scale(1.1);
+}
+.data-tab-child-2:hover{
+    background-color: rgba(255, 103, 111, 0.623);
+    transform: scale(1.1);
+}
+.data-tab-child-3:hover{
+    background-color: rgba(255, 253, 123, 0.644);
+    transform: scale(1.1);
+}
+.data-tab-child-4:hover{
+    background-color: rgba(133, 89, 255, 0.582);
+    transform: scale(1.1);
+}
