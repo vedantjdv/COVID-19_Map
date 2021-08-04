@@ -1,3 +1,4 @@
+import axios from 'axios';
 var options = {
   method: 'GET',
   url: 'https://corona-virus-world-and-india-data.p.rapidapi.com/api_india',
