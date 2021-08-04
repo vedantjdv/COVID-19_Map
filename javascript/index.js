@@ -10,8 +10,11 @@ var options = {
 
 axios.request(options).then(function (response) {
   //const corona=JSON.parse(response);
-  var student = response.data.state_wise.Maharashtra.active;
-	console.log(student);
+  var confirmedData = response.data.total_values.confirmed;
+  var activeData = response.data.total_values.active;
+  var recoveredData = response.data.total_values.recovered;
+  var deathsData = response.data.total_values.deaths;
+	
 
   google.load('visualization', '1', {'packages': ['geochart']});
   google.setOnLoadCallback(drawVisualization);
@@ -58,6 +61,12 @@ axios.request(options).then(function (response) {
       ['IN-DD','Daman and Diu', 0],
       ['IN-LD','Lakshadweep', response.data.state_wise.Lakshadweep.active]
     ]);
+     
+       document.querySelectorAll("h4")[0].innerHTML = confirmedData;
+       document.querySelectorAll("h4")[1].innerHTML = activeData;
+       document.querySelectorAll("h4")[2].innerHTML = recoveredData;
+       document.querySelectorAll("h4")[3].innerHTML = deathsData;
+    
 
         var opts = {
           region: 'IN',
@@ -81,3 +90,4 @@ axios.request(options).then(function (response) {
 }).catch(function (error) {
 	console.error(error);
 });
+
